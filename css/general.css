@@ -5,7 +5,7 @@ line-heights: dflt - 1; smll - 1.05; p - 1.6
 
 COLOURS
 bg-color - #e67e22
-tints #fdf2e9, #fae5d3;
+tints #fdf2e9, #fae5d3, #6f6f6f
 shadows
 accents
 greys:
@@ -105,7 +105,7 @@ strong {
   letter-spacing: 0.75px;
 }
 
-/* === reusable-buttons ==== */
+/* === reusable buttons ==== */
 .btn:link,
 .btn:visited {
   display: inline-block;
