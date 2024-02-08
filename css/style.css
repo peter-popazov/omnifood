@@ -107,49 +107,6 @@ header {
   line-height: 1.6;
 }
 
-/* === buttons-hero ==== */
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  background-color: #e67e22;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn-primary:link,
-.btn-primary:visited {
-  color: #fff;
-  background-color: #e67e22;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: #cf711f;
-  transition: 3;
-  transform: all 0.3s;
-}
-
-.btn-secondary:link,
-.btn-secondary:visited {
-  color: #555;
-  background-color: #ffffff;
-}
-
-.btn-secondary:hover,
-.btn-secondary:active {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.mrg-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 /* === customers-hero === */
 .delivered-meals {
   margin-top: 7.2rem;
@@ -241,12 +198,24 @@ header {
 /* ========================= */
 /* ***       MEALS       *** */
 /* ========================= */
-.featured {
-  padding: 9.6rem 0;
+.section-meals {
+  margin-bottom: 9.6rem;
 }
 
 .meal-image {
   width: 100%;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.07);
 }
 
 .meal-title {
@@ -256,10 +225,79 @@ header {
   margin-bottom: 3.2rem;
 }
 
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
 .meal-attributes {
   list-style: none;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.meal-attributes li {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4remd;
+  color: #e67e22;
+}
+
+.meal-tags {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  padding: 0.4rem 0.8rem;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d92d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.all-recepies {
+  font-size: 1.6rem;
+  color: #b8651b;
+  text-align: center;
 }

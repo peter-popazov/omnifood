@@ -15,7 +15,7 @@ letter-spacing: -0.5; 1.05; 1.2
 
 SHADOWS
 
-BORDER RADIUS: def: 10px;
+BORDER RADIUS: def: 9px; 11px
 
 */
 
@@ -50,7 +50,7 @@ body {
 }
 
 .grid--center-vert {
-    align-items: center;
+  align-items: center;
 }
 
 .grid--2-cols {
@@ -91,6 +91,10 @@ h3 {
   margin-bottom: 3.2rem;
 }
 
+strong {
+  font-weight: 500;
+}
+
 .sub-heading {
   display: block;
   font-size: 1.6rem;
@@ -99,4 +103,72 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
+
+/* === reusable-buttons ==== */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #cf711f;
+  transition: 3;
+  transform: all 0.3s;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  color: #555;
+  background-color: #ffffff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* === reuseable links === */
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 1px solid transparent;
+  color: #cf711f;
+}
+
+/* === helper classes === */
+.mrg-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.mrg-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center !important;
 }
