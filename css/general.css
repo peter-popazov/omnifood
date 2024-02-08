@@ -49,6 +49,10 @@ body {
   gap: 9.6rem 6.4rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--center-vert {
   align-items: center;
 }
