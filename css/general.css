@@ -26,6 +26,11 @@ BORDER RADIUS: def: 9px; 11px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230, 125, 34, 0.5);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -110,6 +115,7 @@ strong {
 }
 
 /* === reusable buttons ==== */
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -145,6 +151,21 @@ strong {
 .btn-secondary:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form {
+  border: none;
+  cursor: pointer;
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+  align-self: end;
+}
+
+.btn-form:hover,
+.btn-form:active {
+  background-color: #fdf2e9;
+  color: #45260a;
 }
 
 /* === reuseable links === */
