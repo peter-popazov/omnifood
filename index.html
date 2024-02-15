@@ -25,11 +25,13 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Meals</a></li>
-          <li><a href="#" class="main-nav-link">Testomonials</a></li>
-          <li><a href="#" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-btn">Try it free</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li>
+            <a href="#testomonials" class="main-nav-link">Testomonials</a>
+          </li>
+          <li><a href="#prices" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-btn">Try it free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -49,10 +51,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" class="btn btn-primary mrg-right-sm"
+            <a href="#cta" class="btn btn-primary mrg-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn-secondary">Learn more</a>
+            <a href="#how" class="btn btn-secondary">Learn more</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -115,7 +117,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="sub-heading">How it works</span>
           <h2 class="heading-secondary">
@@ -179,14 +181,13 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="sub-heading center-text">Meals</span>
           <h2 class="heading-secondary center-text">
             Omnifood AI chooses from 5,000+ recepies
           </h2>
         </div>
-
         <div class="container grid grid--3-cols mrg-bottom-md">
           <div class="meal">
             <img
@@ -292,7 +293,7 @@
         </div>
       </section>
 
-      <section class="section-testomonials">
+      <section class="section-testomonials" id="testomonials">
         <div class="testomonials-container">
           <span class="sub-heading">Testomonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -425,7 +426,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-prices">
+      <section class="section-prices" id="prices">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -534,7 +535,7 @@
         </div>
       </section>
 
-      <section class="secton-cta">
+      <section class="secton-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -617,7 +618,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; <span class="year">2024</span> by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2024</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="adress-col">
@@ -664,6 +666,7 @@
         </nav>
       </div>
     </footer>
+    <script defer src="./script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -672,6 +675,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script defer src="./script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </body>
 </html>
